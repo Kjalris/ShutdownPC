@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.PrimaryController">
+   <children>
+      <Button fx:id="startButton" layoutX="35.0" layoutY="125.0" mnemonicParsing="false" onAction="#startProgram" prefHeight="25.0" prefWidth="110.0" text="Start" textOverrun="CENTER_ELLIPSIS">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+      <Button fx:id="cancelButton" layoutX="35.0" layoutY="195.0" mnemonicParsing="false" onAction="#stopProgram" prefHeight="25.0" prefWidth="110.0" text="Cancel" textOverrun="CENTER_ELLIPSIS">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></Button>
+      <TextField fx:id="inputTime" layoutX="35.0" layoutY="60.0" text="3600">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor></TextField>
+      <Label layoutX="35.0" layoutY="35.0" text="Input time till pc should shut down" />
+      <Label layoutX="35.0" layoutY="100.0" text="Press &quot;Start&quot; to launch the timer" />
+      <Label layoutX="35.0" layoutY="170.0" prefHeight="25.0" prefWidth="370.0" text="To cancel the timer and start an new, press &quot;Cancel&quot;" />
+      <Label layoutX="468.0" layoutY="129.0" text="Time left before the pc shuts down:" />
+      <Label fx:id="timerLabel" layoutX="468.0" layoutY="145.0" prefHeight="76.0" prefWidth="225.0" text="Time left will show here">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font></Label>
+      <ImageView fitHeight="129.0" fitWidth="361.0" layoutX="28.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@CH_reading_2.0.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="200.0" layoutX="468.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@FuturamaComposition1024.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <TextArea fx:id="infoBoksTextArea" editable="false" layoutX="397.0" layoutY="271.0" prefHeight="155.0" prefWidth="314.0" text="To change the format of the stopwatch:&#10;- S / s  means that the input will countdown in seconds&#10;- M / m means the the input will countdown in minutes&#10;- H / h means that the input will countdown in hours&#10;&#10;If nothing is specified, the countdown will be in seconds" />
+      <Label layoutX="397.0" layoutY="254.0" prefHeight="17.0" prefWidth="91.0" text="Infobox:" />
+   </children>
+</AnchorPane>
